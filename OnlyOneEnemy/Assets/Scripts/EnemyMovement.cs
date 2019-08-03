@@ -23,10 +23,14 @@ public class EnemyMovement : MonoBehaviour
     private float xyWert;
     private int count=0;
     private bool updown;
+
+    private Vector3 change;
     // Use this for initialization
     void Start()
     {
         startPos = transform.position;
+        rbEnemy = GetComponent<Rigidbody2D>();
+        rbEnemy.isKinematic = true;
 
     }
 
@@ -34,13 +38,25 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
 
-        
-            MovementOne();
-            Shoot();
-            
-        
+
+        // MovementOne();
+        //Shoot();
+      //  MovementTwo();
+
+
     }
-    
+
+    void FixedUpdate()
+    {
+
+
+        // MovementOne();
+        //Shoot();
+        MovementTwo();
+
+
+    }
+
     void MovementOne()
     {
 
@@ -54,8 +70,9 @@ public class EnemyMovement : MonoBehaviour
                 newPos = startPos;
 
                 newPos.y = newPos.y + Mathf.PingPong(Time.time * enemySpeed, xyWert);
-                
-                transform.position = newPos;
+
+
+            transform.position = newPos;
                 
                 
             
@@ -106,6 +123,23 @@ public class EnemyMovement : MonoBehaviour
 
 
         }
+    }
+
+    public void MovementTwo()
+    {
+        
+        change = startPos;
+        transform.position = new Vector3(3.0f, 0.0f, 0.0f);
+        
+        newPos = startPos;
+
+
+
+        rbEnemy.MovePosition(
+            transform.position + transform.right * enemySpeed * Time.deltaTime);
+        
+        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
