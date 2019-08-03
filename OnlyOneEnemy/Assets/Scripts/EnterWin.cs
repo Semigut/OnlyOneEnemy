@@ -15,7 +15,7 @@ public class EnterWin : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown("return"))
+        if (Input.GetKeyDown("return") || Input.GetKeyDown("space"))
         {
             SceneManager.LoadScene("StartScreen");
         }
@@ -23,7 +23,7 @@ public class EnterWin : MonoBehaviour
 
     void EnterKey()
     {
-        if (Input.GetKeyDown("return"))
+        if (Input.GetKeyDown("return") || Input.GetKeyDown("space"))
         {
             SceneManager.LoadScene("StartScreen");
         }

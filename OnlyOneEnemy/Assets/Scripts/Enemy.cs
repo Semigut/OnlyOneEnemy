@@ -58,12 +58,15 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Sword"))
         {
+            live--;
+
+            if (live <= 0)
+            {
 
 
+               SceneManager.LoadScene("WinScreen");
 
-            SceneManager.LoadScene("WinScreen");
-
-
+            }
         }
     }
 

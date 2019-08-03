@@ -13,7 +13,7 @@ public class Start : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown("return"))
+        if (Input.GetKeyDown("return") || Input.GetKeyDown("space"))
         {
             SceneManager.LoadScene("FirstLevel");
         }
@@ -21,7 +21,7 @@ public class Start : MonoBehaviour
 
     void EnterKey()
     {
-        if (Input.GetKeyDown("return"))
+        if (Input.GetKeyDown("return") || Input.GetKeyDown("space"))
         {
             SceneManager.LoadScene("FirstLevel");
         }

@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  speed: 10
+  speed: 12
 --- !u!95 &403726596
 Animator:
   serializedVersion: 3
@@ -1376,7 +1376,7 @@ MonoBehaviour:
   - {fileID: 414261539}
   - {fileID: 1429932825}
   player: {fileID: 1840901471}
-  speed: 7
+  speed: 15
 --- !u!50 &1840901478
 Rigidbody2D:
   serializedVersion: 4

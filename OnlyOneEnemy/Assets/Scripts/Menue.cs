@@ -11,5 +11,22 @@ public class Menue : MonoBehaviour
 
         SceneManager.LoadScene("StartScreen");
     }
+    void Update()
+    {
 
+        if (Input.GetKeyDown("return") || Input.GetKeyDown("space"))
+        {
+            SceneManager.LoadScene("StartScreen");
+        }
+    }
+
+    void EnterKey()
+    {
+        if (Input.GetKeyDown("return") || Input.GetKeyDown("space"))
+        {
+            SceneManager.LoadScene("StartScreen");
+        }
+
+    }
 }
+

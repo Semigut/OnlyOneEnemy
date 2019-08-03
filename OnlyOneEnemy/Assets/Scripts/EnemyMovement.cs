@@ -44,7 +44,7 @@ public class EnemyMovement : MonoBehaviour
         startPos = transform.position;
         rbEnemy = GetComponent<Rigidbody2D>();
 
-        fireRate = 1f;
+        fireRate = 0.8f;
         nextFire = Time.time;
     }
 
