@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         animator.SetFloat("moveX", 0);
-        animator.SetFloat("moveX", -1);
+        animator.SetFloat("moveY", 1);
     }
 
     // Update is called once per frame
