@@ -21,7 +21,7 @@ public class PlayerHit : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         
-        if (other.CompareTag("dmg") )
+        if (other.CompareTag("dmg"))
         {
             other.GetComponent<Enemy>().Smash();
             Debug.Log("Test");

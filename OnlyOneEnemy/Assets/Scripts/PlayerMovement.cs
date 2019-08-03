@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currentState;
     public float speed;
-    public int live = 3;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
@@ -84,13 +83,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("EnemyDmg")){
-            live--;
+        if (other.CompareTag("EnemyDmg") && this.gameObject.CompareTag("Player"))
+        {
+           
 
-            if (live <= 0)
-            {
+           
                 Destroy(this.gameObject);
-            }
+           
         
         }   
     }
