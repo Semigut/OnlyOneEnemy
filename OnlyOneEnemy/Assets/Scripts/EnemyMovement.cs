@@ -32,7 +32,7 @@ public class EnemyMovement : MonoBehaviour
     void MovementOne()
     {
 
-        xyWert = 8;
+        xyWert = 5;
         updown = true;
 
         if (updown && count <= 6) 

@@ -38,9 +38,10 @@ public class Enemy : MonoBehaviour
     
     public void takeDmg()
     {
-        Debug.Log("-1");
+        
         live--;
-        if(live<= 0)
+        Debug.Log(live);
+        if (live<= 0)
         {
             Destroy(this.gameObject);
         }

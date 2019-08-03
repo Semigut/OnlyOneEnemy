@@ -7,6 +7,7 @@ TagManager:
   - dmg
   - EnemyDmg
   - Wall
+  - Counter
   layers:
   - Default
   - TransparentFX
