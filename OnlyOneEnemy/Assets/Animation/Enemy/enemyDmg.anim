@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: walkUp
+  m_Name: enemyDmg
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,14 +19,17 @@ AnimationClip:
   m_FloatCurves: []
   m_PPtrCurves:
   - curve:
-    - time: 0
-      value: {fileID: 8299442672302037663, guid: 436fec6000dc7ae49b5182083f71dfbd,
+    - time: 0.016666668
+      value: {fileID: -4330268991715949383, guid: f60e7d0c42486b9439d31087be139cd0,
+        type: 3}
+    - time: 0.083333336
+      value: {fileID: 2669676465953600741, guid: f60e7d0c42486b9439d31087be139cd0,
         type: 3}
     - time: 0.16666667
-      value: {fileID: 5148900047847965929, guid: 436fec6000dc7ae49b5182083f71dfbd,
+      value: {fileID: -7580840897618892701, guid: f60e7d0c42486b9439d31087be139cd0,
         type: 3}
-    - time: 0.33333334
-      value: {fileID: 6402114131331143171, guid: 6e9ef9ca43e01304baf4d41b12a8f9b5,
+    - time: 0.25
+      value: {fileID: -4401797971448541832, guid: f60e7d0c42486b9439d31087be139cd0,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -47,20 +50,21 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 8299442672302037663, guid: 436fec6000dc7ae49b5182083f71dfbd, type: 3}
-    - {fileID: 5148900047847965929, guid: 436fec6000dc7ae49b5182083f71dfbd, type: 3}
-    - {fileID: 6402114131331143171, guid: 6e9ef9ca43e01304baf4d41b12a8f9b5, type: 3}
+    - {fileID: -4330268991715949383, guid: f60e7d0c42486b9439d31087be139cd0, type: 3}
+    - {fileID: 2669676465953600741, guid: f60e7d0c42486b9439d31087be139cd0, type: 3}
+    - {fileID: -7580840897618892701, guid: f60e7d0c42486b9439d31087be139cd0, type: 3}
+    - {fileID: -4401797971448541832, guid: f60e7d0c42486b9439d31087be139cd0, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.35000002
+    m_StopTime: 0.26666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -74,4 +78,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.25
+    functionName: UnSmash
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
