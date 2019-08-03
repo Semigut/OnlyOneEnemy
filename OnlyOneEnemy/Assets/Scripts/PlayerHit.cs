@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHit : MonoBehaviour
 {
     
-    private bool takeDmg = false;
+ 
     // Start is called before the first frame update
     void Start()
     {
