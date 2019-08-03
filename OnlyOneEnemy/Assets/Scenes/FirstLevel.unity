@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 364643515}
   m_Layer: 0
   m_Name: leftHitbox
-  m_TagString: EditorOnly
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  speed: 9
+  speed: 10
 --- !u!95 &403726596
 Animator:
   serializedVersion: 3
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 404607402}
   m_Layer: 0
   m_Name: rightHitbox
-  m_TagString: EditorOnly
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 494459087}
   m_Layer: 0
   m_Name: downHitbox
-  m_TagString: EditorOnly
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 1670920885}
   m_Layer: 0
   m_Name: upHitbox
-  m_TagString: EditorOnly
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1486,8 +1486,8 @@ Transform:
   m_Father: {fileID: 1840901473}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &2073254431
-PolygonCollider2D:
+--- !u!61 &2073254431
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1499,7 +1499,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.030338347, y: 0.0070010424}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1509,17 +1509,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.054712106, y: 0.16554368}
-      - {x: 0.030423928, y: 0.3019075}
-      - {x: -0.10082722, y: 0.30043945}
-      - {x: -0.12125263, y: 0.16016638}
-      - {x: -0.18291607, y: 0.13724597}
-      - {x: -0.19687557, y: -0.046148278}
-      - {x: -0.05892372, y: -0.2737451}
-      - {x: 0.14103623, y: -0.28845727}
-      - {x: 0.0963522, y: -0.23101346}
-      - {x: 0.15380135, y: -0.2201492}
-      - {x: 0.107862666, y: -0.08478141}
-      - {x: 0.1309681, y: 0.1054915}
+  serializedVersion: 2
+  m_Size: {x: 0.31388813, y: 0.5565946}
+  m_EdgeRadius: 0

@@ -9,4 +9,22 @@ public class Start : MonoBehaviour
 
         SceneManager.LoadScene("FirstLevel");
     }
+
+    void Update()
+    {
+
+        if (Input.GetKeyDown("return"))
+        {
+            SceneManager.LoadScene("FirstLevel");
+        }
+    }
+
+    void EnterKey()
+    {
+        if (Input.GetKeyDown("return"))
+        {
+            SceneManager.LoadScene("FirstLevel");
+        }
+
+    }
 }

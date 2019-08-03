@@ -8,6 +8,7 @@ TagManager:
   - EnemyDmg
   - Wall
   - Counter
+  - Sword
   layers:
   - Default
   - TransparentFX
