@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum PlayerState
 {
@@ -85,12 +86,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("EnemyDmg") && this.gameObject.CompareTag("Player"))
         {
-           
 
-           
-                Destroy(this.gameObject);
-           
-        
+
+
+            SceneManager.LoadScene("GameOverScreen");
+
+
         }   
     }
 }
