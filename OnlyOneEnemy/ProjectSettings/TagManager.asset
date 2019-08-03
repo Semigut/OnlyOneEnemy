@@ -6,6 +6,7 @@ TagManager:
   tags:
   - dmg
   - EnemyDmg
+  - Wall
   layers:
   - Default
   - TransparentFX
