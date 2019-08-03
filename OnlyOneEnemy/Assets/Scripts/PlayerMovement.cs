@@ -14,10 +14,11 @@ public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currentState;
     public float speed;
+    public int live = 3;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -79,5 +80,18 @@ public class PlayerMovement : MonoBehaviour
             transform.position + change.normalized * speed * Time.deltaTime
         );
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("EnemyDmg")){
+            live--;
+
+            if (live <= 0)
+            {
+                Destroy(this.gameObject);
+            }
+        
+        }   
     }
 }

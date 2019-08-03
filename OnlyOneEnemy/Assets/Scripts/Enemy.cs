@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 
     public Animator anim;
 
-    public bool change = false;
+    public int live;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,8 +32,22 @@ public class Enemy : MonoBehaviour
     public void UnSmash()
     {
      anim.SetBool("smash", false);
-           
+        
 
     }
+    
+    public void takeDmg()
+    {
+        Debug.Log("-1");
+        live--;
+        if(live<= 0)
+        {
+            Destroy(this.gameObject);
+        }
+            
+
+    }
+
+
 
 }
